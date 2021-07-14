@@ -16,7 +16,7 @@ namespace BigSchool.Controllers
         {
             BigSchoolContext data = new BigSchoolContext();
             Course objCource = new Course();
-            objCource.listCategory = data.Categories.ToList();
+            objCource.listCategory = data.Category.ToList();
 
             return View(objCource);
         }
@@ -31,13 +31,13 @@ namespace BigSchool.Controllers
             ModelState.Remove("LecturerId");
             if (!ModelState.IsValid)
             {
-                objCourse.listCategory = data.Categories.ToList();
+                objCourse.listCategory = data.Category.ToList();
                 return View("Create", objCourse);
             }
             ApplicationUser user = System.Web.HttpContext.Current.GetOwinContext().GetUserManager<ApplicationUserManager>().FindById(System.Web.HttpContext.Current.User.Identity.GetUserId());
             objCourse.LecturerId = user.Id;
 
-            data.Courses.Add(objCourse);
+            data.Course.Add(objCourse);
             data.SaveChanges();
 
             return RedirectToAction("Index", "Home");
@@ -52,7 +52,7 @@ namespace BigSchool.Controllers
        
             foreach (Attendance temp in listAttendances)
             {
-                Course ObjCourse = temp.Cource;
+                Course ObjCourse = temp.Course;
                 ObjCourse.LectureName = System.Web.HttpContext.Current.GetOwinContext().GetUserManager<ApplicationUserManager>()
                     .FindById(ObjCourse.LecturerId).Name;
                 courses.Add(ObjCourse);
@@ -64,7 +64,7 @@ namespace BigSchool.Controllers
         {
             ApplicationUser curentUser = System.Web.HttpContext.Current.GetOwinContext().GetUserManager<ApplicationUserManager>().FindById(System.Web.HttpContext.Current.User.Identity.GetUserId());
             BigSchoolContext context = new BigSchoolContext();
-            var courses = context.Courses.Where(c => c.LecturerId == curentUser.Id && c.Datetime > DateTime.Now).ToList();
+            var courses = context.Course.Where(c => c.LecturerId == curentUser.Id && c.Datetime > DateTime.Now).ToList();
             foreach (Course i in courses)
             {
                 i.LectureName = curentUser.Name;

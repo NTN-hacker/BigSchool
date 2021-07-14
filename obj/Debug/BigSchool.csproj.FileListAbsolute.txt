@@ -69,7 +69,10 @@ C:\Users\ACER\Dropbox\My PC (LAPTOP-42EV1F8L)\Documents\thuc-hanh-lap-trinh-web\
 C:\Users\ACER\Dropbox\My PC (LAPTOP-42EV1F8L)\Documents\thuc-hanh-lap-trinh-web\Lab04-BigSchool\BigSchool\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\ACER\Dropbox\My PC (LAPTOP-42EV1F8L)\Documents\thuc-hanh-lap-trinh-web\Lab04-BigSchool\BigSchool\bin\Newtonsoft.Json.dll
 C:\Users\ACER\Dropbox\My PC (LAPTOP-42EV1F8L)\Documents\thuc-hanh-lap-trinh-web\Lab04-BigSchool\BigSchool\bin\Owin.dll
+C:\Users\ACER\Dropbox\My PC (LAPTOP-42EV1F8L)\Documents\thuc-hanh-lap-trinh-web\Lab04-BigSchool\BigSchool\bin\System.Net.Http.Formatting.dll
 C:\Users\ACER\Dropbox\My PC (LAPTOP-42EV1F8L)\Documents\thuc-hanh-lap-trinh-web\Lab04-BigSchool\BigSchool\bin\System.Web.Helpers.dll
+C:\Users\ACER\Dropbox\My PC (LAPTOP-42EV1F8L)\Documents\thuc-hanh-lap-trinh-web\Lab04-BigSchool\BigSchool\bin\System.Web.Http.dll
+C:\Users\ACER\Dropbox\My PC (LAPTOP-42EV1F8L)\Documents\thuc-hanh-lap-trinh-web\Lab04-BigSchool\BigSchool\bin\System.Web.Http.WebHost.dll
 C:\Users\ACER\Dropbox\My PC (LAPTOP-42EV1F8L)\Documents\thuc-hanh-lap-trinh-web\Lab04-BigSchool\BigSchool\bin\System.Web.Mvc.dll
 C:\Users\ACER\Dropbox\My PC (LAPTOP-42EV1F8L)\Documents\thuc-hanh-lap-trinh-web\Lab04-BigSchool\BigSchool\bin\System.Web.Optimization.dll
 C:\Users\ACER\Dropbox\My PC (LAPTOP-42EV1F8L)\Documents\thuc-hanh-lap-trinh-web\Lab04-BigSchool\BigSchool\bin\System.Web.Razor.dll
@@ -77,6 +80,11 @@ C:\Users\ACER\Dropbox\My PC (LAPTOP-42EV1F8L)\Documents\thuc-hanh-lap-trinh-web\
 C:\Users\ACER\Dropbox\My PC (LAPTOP-42EV1F8L)\Documents\thuc-hanh-lap-trinh-web\Lab04-BigSchool\BigSchool\bin\System.Web.WebPages.dll
 C:\Users\ACER\Dropbox\My PC (LAPTOP-42EV1F8L)\Documents\thuc-hanh-lap-trinh-web\Lab04-BigSchool\BigSchool\bin\System.Web.WebPages.Razor.dll
 C:\Users\ACER\Dropbox\My PC (LAPTOP-42EV1F8L)\Documents\thuc-hanh-lap-trinh-web\Lab04-BigSchool\BigSchool\bin\WebGrease.dll
+C:\Users\ACER\Dropbox\My PC (LAPTOP-42EV1F8L)\Documents\thuc-hanh-lap-trinh-web\Lab04-BigSchool\BigSchool\bin\EntityFramework.xml
+C:\Users\ACER\Dropbox\My PC (LAPTOP-42EV1F8L)\Documents\thuc-hanh-lap-trinh-web\Lab04-BigSchool\BigSchool\bin\EntityFramework.SqlServer.xml
+C:\Users\ACER\Dropbox\My PC (LAPTOP-42EV1F8L)\Documents\thuc-hanh-lap-trinh-web\Lab04-BigSchool\BigSchool\bin\System.Net.Http.Formatting.xml
+C:\Users\ACER\Dropbox\My PC (LAPTOP-42EV1F8L)\Documents\thuc-hanh-lap-trinh-web\Lab04-BigSchool\BigSchool\bin\System.Web.Http.xml
+C:\Users\ACER\Dropbox\My PC (LAPTOP-42EV1F8L)\Documents\thuc-hanh-lap-trinh-web\Lab04-BigSchool\BigSchool\bin\System.Web.Http.WebHost.xml
 C:\Users\ACER\Dropbox\My PC (LAPTOP-42EV1F8L)\Documents\thuc-hanh-lap-trinh-web\Lab04-BigSchool\BigSchool\bin\System.Web.Helpers.xml
 C:\Users\ACER\Dropbox\My PC (LAPTOP-42EV1F8L)\Documents\thuc-hanh-lap-trinh-web\Lab04-BigSchool\BigSchool\bin\System.Web.Mvc.xml
 C:\Users\ACER\Dropbox\My PC (LAPTOP-42EV1F8L)\Documents\thuc-hanh-lap-trinh-web\Lab04-BigSchool\BigSchool\bin\System.Web.Optimization.xml
@@ -86,8 +94,6 @@ C:\Users\ACER\Dropbox\My PC (LAPTOP-42EV1F8L)\Documents\thuc-hanh-lap-trinh-web\
 C:\Users\ACER\Dropbox\My PC (LAPTOP-42EV1F8L)\Documents\thuc-hanh-lap-trinh-web\Lab04-BigSchool\BigSchool\bin\System.Web.WebPages.Razor.xml
 C:\Users\ACER\Dropbox\My PC (LAPTOP-42EV1F8L)\Documents\thuc-hanh-lap-trinh-web\Lab04-BigSchool\BigSchool\bin\Newtonsoft.Json.xml
 C:\Users\ACER\Dropbox\My PC (LAPTOP-42EV1F8L)\Documents\thuc-hanh-lap-trinh-web\Lab04-BigSchool\BigSchool\bin\Antlr3.Runtime.pdb
-C:\Users\ACER\Dropbox\My PC (LAPTOP-42EV1F8L)\Documents\thuc-hanh-lap-trinh-web\Lab04-BigSchool\BigSchool\bin\EntityFramework.xml
-C:\Users\ACER\Dropbox\My PC (LAPTOP-42EV1F8L)\Documents\thuc-hanh-lap-trinh-web\Lab04-BigSchool\BigSchool\bin\EntityFramework.SqlServer.xml
 C:\Users\ACER\Dropbox\My PC (LAPTOP-42EV1F8L)\Documents\thuc-hanh-lap-trinh-web\Lab04-BigSchool\BigSchool\bin\Microsoft.AspNet.Identity.Core.xml
 C:\Users\ACER\Dropbox\My PC (LAPTOP-42EV1F8L)\Documents\thuc-hanh-lap-trinh-web\Lab04-BigSchool\BigSchool\bin\Microsoft.AspNet.Identity.Owin.xml
 C:\Users\ACER\Dropbox\My PC (LAPTOP-42EV1F8L)\Documents\thuc-hanh-lap-trinh-web\Lab04-BigSchool\BigSchool\bin\Microsoft.AspNet.Identity.EntityFramework.xml
@@ -105,10 +111,3 @@ C:\Users\ACER\Dropbox\My PC (LAPTOP-42EV1F8L)\Documents\thuc-hanh-lap-trinh-web\
 C:\Users\ACER\Dropbox\My PC (LAPTOP-42EV1F8L)\Documents\thuc-hanh-lap-trinh-web\Lab04-BigSchool\BigSchool\obj\Debug\BigSchool.csproj.CopyComplete
 C:\Users\ACER\Dropbox\My PC (LAPTOP-42EV1F8L)\Documents\thuc-hanh-lap-trinh-web\Lab04-BigSchool\BigSchool\obj\Debug\BigSchool.dll
 C:\Users\ACER\Dropbox\My PC (LAPTOP-42EV1F8L)\Documents\thuc-hanh-lap-trinh-web\Lab04-BigSchool\BigSchool\obj\Debug\BigSchool.pdb
-C:\Users\ACER\Dropbox\My PC (LAPTOP-42EV1F8L)\Documents\thuc-hanh-lap-trinh-web\Lab04-BigSchool\BigSchool\bin\System.Net.Http.Formatting.dll
-C:\Users\ACER\Dropbox\My PC (LAPTOP-42EV1F8L)\Documents\thuc-hanh-lap-trinh-web\Lab04-BigSchool\BigSchool\bin\System.Web.Http.dll
-C:\Users\ACER\Dropbox\My PC (LAPTOP-42EV1F8L)\Documents\thuc-hanh-lap-trinh-web\Lab04-BigSchool\BigSchool\bin\System.Web.Http.WebHost.dll
-C:\Users\ACER\Dropbox\My PC (LAPTOP-42EV1F8L)\Documents\thuc-hanh-lap-trinh-web\Lab04-BigSchool\BigSchool\bin\System.Net.Http.Formatting.xml
-C:\Users\ACER\Dropbox\My PC (LAPTOP-42EV1F8L)\Documents\thuc-hanh-lap-trinh-web\Lab04-BigSchool\BigSchool\bin\System.Web.Http.xml
-C:\Users\ACER\Dropbox\My PC (LAPTOP-42EV1F8L)\Documents\thuc-hanh-lap-trinh-web\Lab04-BigSchool\BigSchool\bin\System.Web.Http.WebHost.xml
-C:\Users\ACER\Dropbox\My PC (LAPTOP-42EV1F8L)\Documents\thuc-hanh-lap-trinh-web\Lab04-BigSchool\BigSchool\obj\Debug\BigSchool.csproj.AssemblyReference.cache

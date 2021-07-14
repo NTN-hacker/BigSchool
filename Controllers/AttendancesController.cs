@@ -27,7 +27,7 @@ namespace BigSchool.Controllers
                 Attendee = User.Identity.GetUserId()
             };
             data.Attendance.Add(attendance);
-            //data.SaveChanges();
+            data.SaveChanges();
             return Ok();
         }
     }

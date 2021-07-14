@@ -55,11 +55,12 @@ textarea {
             background-color: #d41d50;
         }
 
-        .course > li .detail {
+        .course > li .details {
             position: absolute;
             top: 0;
             left: 70px;
         }
+
         .course > li .lecture {
             
         }
