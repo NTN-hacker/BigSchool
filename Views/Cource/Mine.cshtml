@@ -27,13 +27,14 @@
                     <span class="catelogy">
                         @course.Category.Name
                     </span>
+                    <div class="action">
+                        @*<a href="@Url.Action("Edit","Course",new { sId=course.Id })">Edit</a>*@
+                        @Html.ActionLink("Edit", "Edit", new { sId = course.Id })
+                        @*<a href="">Delete</a>*@
+                        @Html.ActionLink("Delete", "Delete", new { sId = course.Id })
+                    </div>
                 </div>
-                <div class="action">
-                    @*<a href="@Url.Action("Edit","Course",new { sId=course.Id })">Edit</a>*@
-                    @Html.ActionLink("Edit", "Edit", new { sId = course.Id })
-                    @*<a href="">Delete</a>*@
-                    @Html.ActionLink("Delete", "Delete", new { sId = course.Id })
-                </div>
+             
             </li>
         }
     </ul>

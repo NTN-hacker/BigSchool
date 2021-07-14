@@ -1,4 +1,4 @@
-namespace BigSchool.Models
+﻿namespace BigSchool.Models
 {
     using System;
     using System.Collections.Generic;
@@ -20,9 +20,11 @@ namespace BigSchool.Models
         [StringLength(128)]
         public string LecturerId { get; set; }
 
-        [StringLength(255)]
+      
+        [StringLength(255, ErrorMessage = "Place vui lòng nhập không quá 255 kí tự")]
         public string Place { get; set; }
 
+        [DisplayFormat(DataFormatString = "{MM/dd/yyyy}")]
         public DateTime? Datetime { get; set; }
 
         public int? CategoryId { get; set; }
@@ -31,7 +33,7 @@ namespace BigSchool.Models
         public virtual ICollection<Attendance> Attendance { get; set; }
         public string Name;
         public string LectureName;
-        //ch�n list category
+        //chèn list category
         public List<Category> listCategory = new List<Category>();
         public virtual Category Category { get; set; }
     }
