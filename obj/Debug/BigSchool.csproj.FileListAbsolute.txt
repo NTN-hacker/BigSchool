@@ -1,3 +1,4 @@
+C:\Users\ACER\Dropbox\My PC (LAPTOP-42EV1F8L)\Documents\thuc-hanh-lap-trinh-web\Lab04-BigSchool\BigSchool\obj\Debug\BigSchool.csproj.CoreCompileInputs.cache
 C:\Users\ACER\Dropbox\My PC (LAPTOP-42EV1F8L)\Documents\thuc-hanh-lap-trinh-web\Lab04-BigSchool\BigSchool\bin\BigSchool.dll.config
 C:\Users\ACER\Dropbox\My PC (LAPTOP-42EV1F8L)\Documents\thuc-hanh-lap-trinh-web\Lab04-BigSchool\BigSchool\bin\BigSchool.dll
 C:\Users\ACER\Dropbox\My PC (LAPTOP-42EV1F8L)\Documents\thuc-hanh-lap-trinh-web\Lab04-BigSchool\BigSchool\bin\BigSchool.pdb
@@ -107,7 +108,7 @@ C:\Users\ACER\Dropbox\My PC (LAPTOP-42EV1F8L)\Documents\thuc-hanh-lap-trinh-web\
 C:\Users\ACER\Dropbox\My PC (LAPTOP-42EV1F8L)\Documents\thuc-hanh-lap-trinh-web\Lab04-BigSchool\BigSchool\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\ACER\Dropbox\My PC (LAPTOP-42EV1F8L)\Documents\thuc-hanh-lap-trinh-web\Lab04-BigSchool\BigSchool\bin\Microsoft.Owin.Security.OAuth.xml
 C:\Users\ACER\Dropbox\My PC (LAPTOP-42EV1F8L)\Documents\thuc-hanh-lap-trinh-web\Lab04-BigSchool\BigSchool\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\ACER\Dropbox\My PC (LAPTOP-42EV1F8L)\Documents\thuc-hanh-lap-trinh-web\Lab04-BigSchool\BigSchool\obj\Debug\BigSchool.csproj.CoreCompileInputs.cache
 C:\Users\ACER\Dropbox\My PC (LAPTOP-42EV1F8L)\Documents\thuc-hanh-lap-trinh-web\Lab04-BigSchool\BigSchool\obj\Debug\BigSchool.csproj.CopyComplete
 C:\Users\ACER\Dropbox\My PC (LAPTOP-42EV1F8L)\Documents\thuc-hanh-lap-trinh-web\Lab04-BigSchool\BigSchool\obj\Debug\BigSchool.dll
 C:\Users\ACER\Dropbox\My PC (LAPTOP-42EV1F8L)\Documents\thuc-hanh-lap-trinh-web\Lab04-BigSchool\BigSchool\obj\Debug\BigSchool.pdb
+C:\Users\ACER\Dropbox\My PC (LAPTOP-42EV1F8L)\Documents\thuc-hanh-lap-trinh-web\Lab04-BigSchool\BigSchool\obj\Debug\BigSchool.csproj.AssemblyReference.cache

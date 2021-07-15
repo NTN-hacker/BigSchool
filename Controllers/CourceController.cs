@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
+using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using BigSchool.Models;
@@ -11,6 +13,7 @@ namespace BigSchool.Controllers
 {
     public class CourceController : Controller
     {
+        BigSchoolContext data = new BigSchoolContext();
         // GET: Cource
         public ActionResult Create()
         {
@@ -72,7 +75,58 @@ namespace BigSchool.Controllers
             return View(courses);
         }
 
+        public ActionResult Edit(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            Course course = data.Course.Find(id);
+            if (course == null)
+            {
+                return HttpNotFound();
+            }
+            ViewBag.CategoryId = new SelectList(data.Category, "Id", "Name", course.CategoryId);
+            return View(course);
+        }
 
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Edit([Bind(Include = "Id,LecturerId,Place,DateTime,CategoryId")] Course course)
+        {
+            if (ModelState.IsValid)
+            {
+                data.Entry(course).State = EntityState.Modified;
+                data.SaveChanges();
+                return RedirectToAction("Mine");
+            }
+            ViewBag.CategoryId = new SelectList(data.Category, "Id", "Name", course.CategoryId);
+            return View(course);
+        }
+        public ActionResult Delete(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            Course course = data.Course.Find(id);
+            if (course == null)
+            {
+                return HttpNotFound();
+            }
+            return View(course);
+        }
+
+        // POST: Test/Delete/5
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public ActionResult DeleteConfirmed(int id)
+        {
+            Course course = data.Course.Find(id);
+            data.Course.Remove(course);
+            data.SaveChanges();
+            return RedirectToAction("Mine");
+        }
 
     }
 }

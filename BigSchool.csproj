@@ -256,6 +256,8 @@
     <Content Include="Views\Cource\Create.cshtml" />
     <Content Include="Views\Cource\Attending.cshtml" />
     <Content Include="Views\Cource\Mine.cshtml" />
+    <Content Include="Views\Cource\Delete.cshtml" />
+    <Content Include="Views\Cource\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
