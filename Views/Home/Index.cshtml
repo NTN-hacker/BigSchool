@@ -22,11 +22,15 @@
                 <div class="details">
                     <span class="lecture">
                         @course.Name
+                        <button data-user-id="@course.LecturerId" class="btn btn-default btn-sm js-tongle-follow">Follow</button>
                     </span>
+                    
+                    <br />
                     <span class="category">
                         @course.Category.Name
+                        <button data-course-id="@course.Id" class="btn btn-default btn-sm js-tongle-attendance">Going?</button>
                     </span>
-                    <button data-course-id="@course.Id" class="btn btn-default btn-sm js-tongle-attendance">Going?</button>
+                    
                 </div>
             </li>
         }
@@ -37,13 +41,26 @@
                 $(".js-tongle-attendance").click(function (e) {
 
                     var button = $(e.target);
-                    $.post("/api/attendances", { Id: button.attr("data-course-id") })
+                    $.post("/api/Attendances", { Id: button.attr("data-course-id") })
                         .done(function () {
                             alert("Register course sucessfully!")
                             button
                                 .removeClass("btn-default")
                                 .addClass("btn-info")
                                 .text("Going");
+                        }).fail(function () {
+                            alert("Something fail!");
+                        });
+                });
+            });
+            $(document).ready(function () {
+                $(".js-tongle-follow").click(function (e) {
+
+                    var button = $(e.target);
+                    $.post("/api/Following", { Id: button.attr("data-user-id") })
+                        .done(function () {
+                            alert("Follow sucessfully!")
+                            button.text("Following");
                         }).fail(function () {
                             alert("Something fail!");
                         });

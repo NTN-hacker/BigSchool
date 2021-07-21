@@ -18,7 +18,7 @@ namespace BigSchool.Controllers
         {
             
             var userID = User.Identity.GetUserId();
-            if (data.Attendance.Any(m => m.Attendee == userID && m.CourseId == attenC.Id))
+            if (data.Attendances.Any(m => m.Attendee == userID && m.CourseId == attenC.Id))
             {
                 return BadRequest("The attendaces already exist");
             }
@@ -27,7 +27,7 @@ namespace BigSchool.Controllers
                 CourseId = attenC.Id,
                 Attendee = User.Identity.GetUserId()
             };
-            data.Attendance.Add(attendance);
+            data.Attendances.Add(attendance);
             data.SaveChanges();
             return Ok();
         }

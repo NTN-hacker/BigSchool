@@ -19,7 +19,7 @@ namespace BigSchool.Controllers
         {
             BigSchoolContext data = new BigSchoolContext();
             Course objCource = new Course();
-            objCource.listCategory = data.Category.ToList();
+            objCource.listCategory = data.Categories.ToList();
 
             return View(objCource);
         }
@@ -34,13 +34,13 @@ namespace BigSchool.Controllers
             ModelState.Remove("LecturerId");
             if (!ModelState.IsValid)
             {
-                objCourse.listCategory = data.Category.ToList();
+                objCourse.listCategory = data.Categories.ToList();
                 return View("Create", objCourse);
             }
             ApplicationUser user = System.Web.HttpContext.Current.GetOwinContext().GetUserManager<ApplicationUserManager>().FindById(System.Web.HttpContext.Current.User.Identity.GetUserId());
             objCourse.LecturerId = user.Id;
 
-            data.Course.Add(objCourse);
+            data.Courses.Add(objCourse);
             data.SaveChanges();
 
             return RedirectToAction("Index", "Home");
@@ -50,7 +50,7 @@ namespace BigSchool.Controllers
             BigSchoolContext data = new BigSchoolContext();
             ApplicationUser currentUser = System.Web.HttpContext.Current.GetOwinContext().GetUserManager<ApplicationUserManager>()
                                                  .FindById(System.Web.HttpContext.Current.User.Identity.GetUserId());
-            var listAttendances = data.Attendance.Where(p => p.Attendee == currentUser.Id).ToList();
+            var listAttendances = data.Attendances.Where(p => p.Attendee == currentUser.Id).ToList();
             var courses = new List<Course>();
        
             foreach (Attendance temp in listAttendances)
@@ -67,7 +67,7 @@ namespace BigSchool.Controllers
         {
             ApplicationUser curentUser = System.Web.HttpContext.Current.GetOwinContext().GetUserManager<ApplicationUserManager>().FindById(System.Web.HttpContext.Current.User.Identity.GetUserId());
             BigSchoolContext context = new BigSchoolContext();
-            var courses = context.Course.Where(c => c.LecturerId == curentUser.Id && c.Datetime > DateTime.Now).ToList();
+            var courses = context.Courses.Where(c => c.LecturerId == curentUser.Id && c.Datetime > DateTime.Now).ToList();
             foreach (Course i in courses)
             {
                 i.LectureName = curentUser.Name;
@@ -81,12 +81,12 @@ namespace BigSchool.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Course course = data.Course.Find(id);
+            Course course = data.Courses.Find(id);
             if (course == null)
             {
                 return HttpNotFound();
             }
-            ViewBag.CategoryId = new SelectList(data.Category, "Id", "Name", course.CategoryId);
+            ViewBag.CategoryId = new SelectList(data.Categories, "Id", "Name", course.CategoryId);
             return View(course);
         }
 
@@ -100,7 +100,7 @@ namespace BigSchool.Controllers
                 data.SaveChanges();
                 return RedirectToAction("Mine");
             }
-            ViewBag.CategoryId = new SelectList(data.Category, "Id", "Name", course.CategoryId);
+            ViewBag.CategoryId = new SelectList(data.Categories, "Id", "Name", course.CategoryId);
             return View(course);
         }
         public ActionResult Delete(int? id)
@@ -109,7 +109,7 @@ namespace BigSchool.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Course course = data.Course.Find(id);
+            Course course = data.Courses.Find(id);
             if (course == null)
             {
                 return HttpNotFound();
@@ -122,8 +122,8 @@ namespace BigSchool.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Course course = data.Course.Find(id);
-            data.Course.Remove(course);
+            Course course = data.Courses.Find(id);
+            data.Courses.Remove(course);
             data.SaveChanges();
             return RedirectToAction("Mine");
         }
